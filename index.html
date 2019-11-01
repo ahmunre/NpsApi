@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>National Parks</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <main class="container">
+
+    <h1>National Parks API</h1>
+    
+      <form id="entry_form" class="EntryForm">
+        <label for="state" id="state_lab" class="StateLab">Enter the state or park name </label>
+        <input id="state_id" type="text"  required><br>
+        <label for="max" id="max-results">Maximum Number of results</label>
+        <input id="js-max-results " type="number" name="max-results" value="10" required>
+        <input type="submit" value="Enter">
+      </form>
+      <p id="js-error-message" class="ErrorMessage"></p>
+      <section id="js-results"class="hidden">
+        <h2> Search Results</h2>
+        <ul id="results-list">
+          
+        </ul>
+      </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
